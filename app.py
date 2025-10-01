@@ -14,7 +14,8 @@ import os
 # ==========================
 # 3. Subir archivo PDF
 # ==========================
-uploaded_file = st.file_uploader("📂 Sube el archivo PDF del Libro de Sueldos", type="pdf") Luego, el procesamiento ocurre dentro de un if uploaded_file is not None:
+uploaded_file = st.file_uploader("📂 Sube el archivo PDF del Libro de Sueldos", type="pdf") 
+if uploaded_file is not None:
 
 # ==========================
 # 4. Función para limpiar espacios
