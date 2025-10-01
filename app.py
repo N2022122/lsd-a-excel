@@ -10,7 +10,6 @@ import pdfplumber
 import pandas as pd
 import re
 import os
-from google.colab import files  # ⚠️ Comentar esta línea si lo usás fuera de Colab
 
 # ==========================
 # 3. Subir archivo PDF
