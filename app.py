@@ -14,9 +14,7 @@ import os
 # ==========================
 # 3. Subir archivo PDF
 # ==========================
-print("📂 Selecciona el archivo PDF del Libro de Sueldos")
-uploaded = files.upload()
-pdf_path = list(uploaded.keys())[0]
+uploaded_file = st.file_uploader("📂 Sube el archivo PDF del Libro de Sueldos", type="pdf") Luego, el procesamiento ocurre dentro de un if uploaded_file is not None:
 
 # ==========================
 # 4. Función para limpiar espacios
@@ -142,4 +140,4 @@ df.to_excel(nombre_archivo, index=False)
 print(f"✅ Archivo generado: {nombre_archivo}")
 
 # Descargar (solo en Colab)
-files.download(nombre_archivo)
+st.download_button
